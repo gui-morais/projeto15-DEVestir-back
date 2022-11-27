@@ -14,5 +14,6 @@ export const clientSchema = joi.object({
 export const productSchema = joi.object({
     name: joi.string().min(3).required(),
     image: joi.string().uri().required(),
-    price: joi.number().required()
-})
+    price: joi.number().required(),
+    stock: joi.number().required(),
+});
